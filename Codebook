@@ -6,7 +6,7 @@ if (!getwd() == "./out-of-box-samples") {
 ## Warning: './out-of-box-samples' already exists
 rm(list = ls(all = TRUE))
 library(plyr) # load plyr first, then dplyr 
-library(data.table) # a prockage that handles dataframe better
+library(data.table) # a package that handles dataframe better
 library(dplyr) # for fancy data table manipulations and organization
 I download the zip file in a temporary folder
 temp <- tempfile()
@@ -30,12 +30,12 @@ XTrain$participants <- SubjectTrain[, 1]
 XTest$activities <- YTest[, 1]
 XTest$participants <- SubjectTest[, 1]
 Part 1
-Should: Merges the training and the test sets to create one data set.
+Should: Merge the training and the test sets to create one data set.
 Master <- rbind(XTrain, XTest)
 duplicated(colnames(Master))
 Master <- Master[, !duplicated(colnames(Master))]
 Part 2
-Should: Extracts only the measurements on the mean and standard deviation for each measurement.
+Should: Extract only the measurements on the mean and standard deviation for each measurement.
 Mean <- grep("mean()", names(Master), value = FALSE, fixed = TRUE)
 #In addition, we need to include 555:559 as they have means and are associated with the gravity terms
 Mean <- append(Mean, 471:477)
