@@ -22,13 +22,17 @@ Appropriately labels the data set with descriptive activity names.
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 What you find in this repository
+
 CodeBook.md: information about raw and tidy data set and elaboration made to transform them
+
 LICENSE: license terms for text and code
+
 README.md: this file
+
 run_analysis.R: R script to transform raw data set in a tidy one
 
 How to create the tidy data set
-clone this repository: git clone git@github.com:README.md
+clone this repository: git clone git@github.com:Jennik3379/getting-and-cleaning-data-project/README.md
 download compressed raw data
 unzip raw data and copy the directory UCI HAR Dataset to the cloned repository root directory
 open a R console and set the working directory to the repository root (use setwd())
