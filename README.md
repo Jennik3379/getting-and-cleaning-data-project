@@ -39,4 +39,4 @@ unzip raw data and copy the directory UCI HAR Dataset to the cloned repository r
 open a R console and set the working directory to the repository root (use setwd())
 source run_analisys.R script (it requires the plyr package): source('run_analysis.R')
 
-In the repository root directory you find the file sensor_avg_by_act_sub.txt with the tidy data set.
+
